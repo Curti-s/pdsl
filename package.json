@@ -1,0 +1,25 @@
+{
+  "name": "pdsl",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this theme!",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "curtis",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {},
+  "keywords": [
+    "responsive",
+    "website",
+    "bootstrap",
+    "4"
+  ]
+}
