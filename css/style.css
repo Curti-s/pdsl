@@ -737,7 +737,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
+  background: #eee;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
@@ -1156,7 +1156,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  background: rgb(245, 244, 244);
   padding: 60px 0;
 }
 
