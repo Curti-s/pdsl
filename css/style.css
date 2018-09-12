@@ -102,22 +102,35 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
 }
 
-#header #logo h1 a, #header #logo h1 a:hover {
+#header #logo h1 a {
   color: #fff;
   padding-left: 10px;
-  border-bottom: 2px solid #18d26e;
-  border-bottom-left-radius: .2rem;
-  border-bottom-right-radius: .2rem;
+}
+
+ #header #logo h1 a:hover, #header #logo h1 a:focus, #header #logo h1 a.active {
+  color: #18d26e;
+  /* border-bottom: 2px solid #18d26e;
+  border-bottom-left-radius: .15rem;
+  border-bottom-right-radius: .15rem; */
 }
 
 #header #logo img {
   padding: 0;
   margin: 0;
+}
+
+#header #logo hr {
+  border-bottom: .15rem solid #18d26e;
+  border-top: none;
+  width: 7.5rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -179,6 +192,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -293,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li.sfHover > ul{
   display: block;
 }
 
@@ -306,6 +320,25 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 180px;
 }
 
+.nav-menu > li > .btn-success {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: .65rem;
+  display: block;
+  letter-spacing: 1px;
+  padding: .5rem 1.2rem;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #18d26e;
+}
+
+.nav-menu > li > .btn-success:hover, 
+.nav-menu > li > .btn-success:active, 
+.nav-menu > li > .btn-success:focus {
+  color: #fff;
+  background: #18d26e;
+}
 /* Nav Menu Arrows */
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
@@ -327,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Meu Container */
 #nav-menu-container {
   float: right;
-  margin: 0;
+  margin-top: .5rem;
 }
 
 @media (min-width: 1024px) {
@@ -348,14 +381,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
   outline: none;
 }
 
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+.nav-menu li:hover > a, .nav-menu > .menu-active > a , .nav-menu li:active > a, .nav-menu li:focus > a{
   color: #18d26e;
 }
 
@@ -374,6 +407,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
+.nav-menu > li > button {
+
+}
 .nav-menu ul li a {
   padding: 10px;
   color: #333;
@@ -562,6 +598,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #featured-services {
   background: #000;
+  padding: 40px 0;
 }
 
 #featured-services .box {
@@ -589,7 +626,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#featured-services h4 a:hover {
+#featured-services h4 a:hover, #featured-services h4 a:active, #featured-services h4 a:focus {
   color: #18d26e;
 }
 
@@ -597,6 +634,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 0;
 }
 
@@ -607,6 +645,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
+
 }
 
 #about::before {
