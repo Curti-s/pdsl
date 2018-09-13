@@ -12,6 +12,7 @@
   "author": "curtis",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
     "browser-sync": "^2.24.7",
     "grunt": "^1.0.3",
     "grunt-browser-sync": "^2.2.0",
