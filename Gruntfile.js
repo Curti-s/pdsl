@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                     sourcemap: 'none'
                 },
                 files: {
-                    'pdsl/css/style.css':'pdsl/scss/style.scss'
+                    'css/style.css':'scss/style.scss'
                 }
             }
         },
@@ -57,5 +57,5 @@ module.exports = function(grunt) {
 
 
     // registerTask
-    grunt.registerTask('default', ['browserSync','watch']);
+    grunt.registerTask('default', ['browserSync','watch:css']);
 };
