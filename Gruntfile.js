@@ -8,7 +8,8 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    sourcemap: 'none'
+                    sourcemap: 'none',
+                    style: 'expanded'
                 },
                 files: {
                     'css/style.css':'scss/style.scss'
@@ -30,7 +31,7 @@ module.exports = function(grunt) {
         },
         watch: {
             css: {
-                files: 'scss/.style.scss',
+                files: 'scss/style.scss',
                 tasks: ['sass','postcss']
             }
         },
@@ -57,5 +58,5 @@ module.exports = function(grunt) {
 
 
     // registerTask
-    grunt.registerTask('default', ['browserSync','watch:css']);
+    grunt.registerTask('default', ['browserSync','sass','postcss']);
 };
