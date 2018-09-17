@@ -1,4 +1,4 @@
-const grunt = require('grunt');
+
 //load grunt
 module.exports = function(grunt) {
     grunt.initConfig({
@@ -58,5 +58,5 @@ module.exports = function(grunt) {
 
 
     // registerTask
-    grunt.registerTask('default', ['browserSync','sass','postcss']);
+    grunt.registerTask('default', ['browserSync','watch']);
 };
