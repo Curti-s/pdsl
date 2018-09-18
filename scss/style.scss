@@ -929,6 +929,7 @@ body {
       }
       p, time {
         color: var(--blue);
+        font-family: "Montserrat", sans-serif;
       }
       &::before {
         content: "";
@@ -988,51 +989,66 @@ body {
         border-bottom: 10px solid transparent;
       }
       &:nth-child(1) .timeline-content::after {
-        border-left-color: $tech-color;
+        border-left-color: $host-color;
       }
       &:nth-of-type(1) .timeline-content {
-        border-color: $tech-color;
+        border-color: $host-color;
         h3 {
-          background: $tech-color
+          background: $host-color
         }
         p {
           color: $htag-color;
+        }
+      }
+      &:nth-of-type(1) .timeline-date {
+        time {
+          color: $host-color;
         }
       }
       &:nth-of-type(1) .timeline-image::before {
-        border-color: $tech-color;
+        border-color: $host-color;
       }
 
       &:nth-of-type(2) .timeline-content::after {
-        border-right-color: $net-color;
+        border-right-color: $vend-color;
       }
       &:nth-of-type(2) .timeline-content {
-        border-color: $net-color;
+        border-color: $vend-color;
         h3 {
-          background: $net-color;
+          background: $vend-color;
         }
         p {
           color: $htag-color;
+        }
+      }
+      &:nth-of-type(2) .timeline-date {
+        time {
+          color: $vend-color;
         }
       }
       &:nth-of-type(2) .timeline-image::before {
-        border-color: $net-color;
+        border-color: $vend-color;
       }
 
       &:nth-of-type(3) .timeline-content {
-        border-color: $tel-color;
+        border-color: $pr-color;
         h3 {
-          background: $tel-color;
+          background: $pr-color;
         }
         p {
           color: $htag-color;
         }
       }
+      &:nth-of-type(3) .timeline-date {
+        time {
+          color: $pr-color;
+        }
+      }
       &:nth-child(3) .timeline-content::after {
-        border-left-color: $tel-color;
+        border-left-color: $pr-color;
       }
       &:nth-child(3) .timeline-image::before {
-        border-color: $tel-color;
+        border-color: $pr-color;
       }
 
       &:nth-of-type(4) .timeline-content {
@@ -1044,6 +1060,11 @@ body {
           color: $htag-color;
         }
       }
+      &:nth-of-type(4) .timeline-date {
+        time {
+          color: $met-color;
+        }
+      }
       &:nth-child(4) .timeline-content::after {
         border-right-color: $met-color;
       }
@@ -1053,52 +1074,67 @@ body {
 
 
       &:nth-of-type(5) .timeline-content {
-        border-color: $pr-color;
+        border-color: $tel-color;
         h3 {
-          background: $pr-color;
+          background: $tel-color;
         }
         p {
           color: $htag-color;
+        }
+      }
+      &:nth-of-type(5) .timeline-date {
+        time {
+          color: $tel-color;
         }
       }
       &:nth-child(5) .timeline-content::after {
-        border-left-color: $pr-color;
+        border-left-color: $tel-color;
       }
       &:nth-child(5) .timeline-image::before {
-        border-color: $pr-color;
+        border-color: $tel-color;
       }
 
       &:nth-of-type(6) .timeline-content {
-        border-color: $vend-color;
+        border-color: $net-color;
         h3 {
-          background: $vend-color;
+          background: $net-color;
         }
         p {
           color: $htag-color;
         }
       }
+      &:nth-of-type(6) .timeline-date {
+        time {
+          color: $net-color;
+        }
+      }
       &:nth-child(6) .timeline-content::after {
-        border-left-color: $vend-color;
+        border-right-color: $net-color;
       }
       &:nth-child(6) .timeline-image::before {
-        border-color: $vend-color;
+        border-color: $net-color;
       }
 
 
       &:nth-of-type(7) .timeline-content {
-        border-color: $host-color;
+        border-color: $tech-color;
         h3 {
-          background: $host-color;
+          background: $tech-color;
         }
         p {
           color: $htag-color;
         }
       }
+      &:nth-of-type(7) .timeline-date {
+        time {
+          color: $tech-color;
+        }
+      }
       &:nth-child(7) .timeline-content::after {
-        border-left-color: $host-color;
+        border-left-color: $tech-color;
       }
       &:nth-child(7) .timeline-image::before {
-        border-color: $host-color;
+        border-color: $tech-color;
       }
 
     }
